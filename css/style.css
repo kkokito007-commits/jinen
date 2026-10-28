@@ -189,7 +189,7 @@ h1, h2, h3 { font-size: inherit; font-weight: 400; }
 }
 .person-name { font-size: calc(var(--text-base) * 1.3); line-height: 1.25; margin-top: calc(var(--baseline) * 0.5); }
 .lines { margin-top: var(--space-3); display: grid; row-gap: calc(var(--baseline) * 0.5); line-height: 1.35; color: var(--ink); }
-.site { margin-top: var(--space-3); font-size: var(--text-sm); }
+.site { display: flex; flex-wrap: wrap; gap: var(--space-1) var(--space-3); margin-top: var(--space-3); font-size: var(--text-sm); }
 .site a { color: var(--ink-faint); }
 .site a:hover { color: var(--ink-muted); }
 
