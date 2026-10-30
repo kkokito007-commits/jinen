@@ -24,7 +24,7 @@
   --space-10: calc(var(--baseline) * 10);
   --space-13: calc(var(--baseline) * 13);
 
-  --measure: 66ch;
+  --measure: 78ch;
   --label: 7.5rem;
   --gutter: clamp(20px, 5vw, 32px);
   --page: calc(var(--label) + var(--space-3) + var(--measure) + var(--gutter) * 2);
@@ -122,15 +122,15 @@ h1, h2, h3 { font-size: inherit; font-weight: 400; }
 
 /* Opening line: quiet, in italic, like the tagline of the reference page */
 .hero { padding-top: var(--space-6); }
+/* Both lines run the full column, so their right edge meets the right edge of the sections below */
 .statement {
-  max-width: var(--measure);
   font-size: var(--text-base);
   font-style: italic;
   line-height: 1.6;
   color: var(--ink-muted);
   letter-spacing: -0.005em;
 }
-.intro { max-width: var(--measure); margin-top: var(--space-3); font-size: var(--text-base); line-height: 1.7; color: var(--ink); }
+.intro { margin-top: var(--space-3); font-size: var(--text-base); line-height: 1.7; color: var(--ink); }
 
 /* Sections: a faint label in a narrow left column, the content beside it */
 .block {
