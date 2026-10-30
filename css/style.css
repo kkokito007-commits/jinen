@@ -155,9 +155,9 @@ h1, h2, h3 { font-size: inherit; font-weight: 400; }
 .row-body p + p { margin-top: var(--space-2); }
 .macron { letter-spacing: 0.03em; }
 
-/* Business: the stacked JINEN mark above the list, as on aratanakatsuji.com.
+/* Business: the stacked JINEN mark sits above the section label; the label still lines up with the first title.
    A small dot hangs in the margin before each title, so titles keep the column's left edge */
-.business-mark { width: 64px; height: auto; margin-bottom: var(--space-5); }
+.business-mark { width: 64px; height: auto; margin-bottom: var(--space-3); }
 #business .row-title { position: relative; }
 #business .row-title::before {
   content: ""; position: absolute; left: -0.8em; top: 0.59em;
