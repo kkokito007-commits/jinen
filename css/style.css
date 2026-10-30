@@ -155,7 +155,9 @@ h1, h2, h3 { font-size: inherit; font-weight: 400; }
 .row-body p + p { margin-top: var(--space-2); }
 .macron { letter-spacing: 0.03em; }
 
-/* Business: a small dot hangs in the margin before each title, so titles keep the column's left edge */
+/* Business: the stacked JINEN mark above the list, as on aratanakatsuji.com.
+   A small dot hangs in the margin before each title, so titles keep the column's left edge */
+.business-mark { width: 64px; height: auto; margin-bottom: var(--space-5); }
 #business .row-title { position: relative; }
 #business .row-title::before {
   content: ""; position: absolute; left: -0.8em; top: 0.59em;
@@ -166,7 +168,7 @@ h1, h2, h3 { font-size: inherit; font-weight: 400; }
 
 .partner { display: flex; align-items: center; gap: var(--space-2); margin-top: var(--space-2); }
 .partner-link { display: inline-flex; align-items: center; gap: var(--space-2); color: var(--ink); text-decoration: none; font-size: var(--text-base); }
-.partner-link img { width: 48px; height: 48px; }
+.partner-link img { width: 34px; height: 34px; }
 .partner-link span { text-decoration: underline; text-decoration-color: var(--ink-whisper); text-decoration-thickness: 1px; text-underline-offset: 0.15em; transition: text-decoration-color 180ms ease; }
 .partner-link:hover span { text-decoration-color: var(--ink-muted); }
 
@@ -213,7 +215,8 @@ a:focus-visible, .menu-toggle:focus-visible { outline: 2px solid var(--ink-muted
   .hero { padding-top: var(--space-4); }
   .block { grid-template-columns: minmax(0, 1fr); row-gap: var(--space-2); margin-top: var(--space-8); }
   .portrait { width: 80px; height: 80px; }
-  .partner-link img { width: 44px; height: 44px; }
+  .partner-link img { width: 32px; height: 32px; }
+  .business-mark { width: 56px; }
   .site-footer { margin-top: var(--space-10); }
 }
 
