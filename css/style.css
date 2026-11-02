@@ -147,6 +147,8 @@ h1, h2, h3 { font-size: inherit; font-weight: 400; }
   letter-spacing: 0.09em;
   color: var(--ink-faint);
 }
+/* Section labels (Business, People, Company) are set larger than the role and ledger labels */
+.label { font-size: calc(var(--text-base) * 0.9); letter-spacing: 0.08em; }
 
 /* Inside a section: each title, then its text below */
 .rows { display: grid; row-gap: var(--space-5); }
@@ -155,9 +157,7 @@ h1, h2, h3 { font-size: inherit; font-weight: 400; }
 .row-body p + p { margin-top: var(--space-2); }
 .macron { letter-spacing: 0.03em; }
 
-/* Business: the stacked JINEN mark sits above the section label; the label still lines up with the first title.
-   A small dot hangs in the margin before each title, so titles keep the column's left edge */
-.business-mark { width: 64px; height: auto; margin-bottom: var(--space-3); }
+/* Business: a small dot hangs in the margin before each title, so titles keep the column's left edge */
 #business .row-title { position: relative; }
 #business .row-title::before {
   content: ""; position: absolute; left: -0.8em; top: 0.59em;
@@ -210,7 +210,6 @@ a:focus-visible, .menu-toggle:focus-visible { outline: 2px solid var(--ink-muted
   .hero { padding-top: var(--space-4); }
   .block { grid-template-columns: minmax(0, 1fr); row-gap: var(--space-2); margin-top: var(--space-8); }
   .portrait { width: 80px; height: 80px; }
-  .business-mark { width: 56px; }
   .site-footer { margin-top: var(--space-10); }
 }
 
