@@ -140,7 +140,7 @@ h1, h2, h3 { font-size: inherit; font-weight: 400; }
   align-items: baseline;
   margin-top: var(--space-10);
 }
-.label, .role, .partner-label, .news-meta, .ledger dt {
+.label, .role, .news-meta, .ledger dt {
   text-transform: uppercase;
   font-weight: 500;
   font-size: var(--text-label);
@@ -166,12 +166,6 @@ h1, h2, h3 { font-size: inherit; font-weight: 400; }
 .row-sub { display: block; font-style: italic; font-size: var(--text-md); }
 .row-sub a { color: var(--ink-muted); }
 
-.partner { display: flex; align-items: center; gap: var(--space-2); margin-top: var(--space-2); }
-.partner-link { display: inline-flex; align-items: center; gap: var(--space-2); color: var(--ink); text-decoration: none; font-size: var(--text-base); }
-.partner-link img { width: 34px; height: 34px; }
-.partner-link span { text-decoration: underline; text-decoration-color: var(--ink-whisper); text-decoration-thickness: 1px; text-underline-offset: 0.15em; transition: text-decoration-color 180ms ease; }
-.partner-link:hover span { text-decoration-color: var(--ink-muted); }
-
 /* People: Arata above Hide; portrait, role and name, then the biography */
 #people .rows { row-gap: var(--space-8); }
 #people { align-items: start; }
@@ -192,10 +186,11 @@ h1, h2, h3 { font-size: inherit; font-weight: 400; }
 .news-meta .place::before { content: "·"; margin-inline: 0.6em; }
 .news-title { color: var(--ink); line-height: 1.35; margin-bottom: calc(var(--baseline) * 0.5); }
 
-/* Contact: label and value on one line */
+/* Company: label and value on one line, then the introduction note */
 .rows.ledger { row-gap: var(--space-1); }
 .ledger .row { display: grid; grid-template-columns: 9rem minmax(0, 1fr); align-items: baseline; }
 .ledger .row-body { margin-top: 0; font-size: var(--text-base); color: var(--ink); line-height: 1.5; }
+.company-note { margin-top: var(--space-3); font-size: var(--text-md); line-height: 1.6; color: var(--ink-muted); }
 
 a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--ink-whisper); text-decoration-thickness: 1px; text-underline-offset: 0.15em; transition: text-decoration-color 180ms ease, color 180ms ease; }
 a:hover { text-decoration-color: var(--ink-muted); }
@@ -215,7 +210,6 @@ a:focus-visible, .menu-toggle:focus-visible { outline: 2px solid var(--ink-muted
   .hero { padding-top: var(--space-4); }
   .block { grid-template-columns: minmax(0, 1fr); row-gap: var(--space-2); margin-top: var(--space-8); }
   .portrait { width: 80px; height: 80px; }
-  .partner-link img { width: 32px; height: 32px; }
   .business-mark { width: 56px; }
   .site-footer { margin-top: var(--space-10); }
 }
